@@ -1,0 +1,7 @@
+{
+  "overall_mape_pct": 17.14,
+  "n_products_forecasted": 60,
+  "horizon_days": 30,
+  "target_mape_pct": 12.0,
+  "target_met": false
+}

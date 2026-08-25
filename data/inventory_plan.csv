@@ -1,0 +1,61 @@
+product_id,category,current_stock,avg_daily_demand,forecast_30d_demand,lead_time_days,safety_stock,reorder_point,recommended_order_qty,needs_reorder_now,days_of_cover_remaining,stockout_risk,overstock_risk
+P0001,Home & Kitchen,199,31.28,938.5,14,50.3,488.3,508.0,True,6.4,High,Low
+P0002,Grocery,219,1.3,38.9,10,2.4,15.3,0.0,False,168.7,Low,High
+P0003,Home & Kitchen,216,1.69,50.7,5,3.0,11.4,0.0,False,127.9,Low,High
+P0004,Home & Kitchen,84,11.71,351.4,3,18.7,53.8,181.0,False,7.2,High,Low
+P0005,Home & Kitchen,319,19.94,598.1,10,36.6,236.0,136.0,False,16.0,Medium,Low
+P0006,Electronics,350,19.37,581.2,3,12.6,70.7,69.0,False,18.1,Medium,Low
+P0007,Electronics,280,10.54,316.1,5,28.9,81.6,0.0,False,26.6,Medium,Low
+P0008,Electronics,84,10.33,310.0,3,18.0,49.0,151.0,False,8.1,High,Low
+P0009,Apparel,228,16.57,497.0,3,12.2,61.9,132.0,False,13.8,High,Low
+P0010,Home & Kitchen,333,18.98,569.3,5,32.6,127.5,98.0,False,17.5,Medium,Low
+P0011,Grocery,280,20.97,629.1,3,17.4,80.3,178.0,False,13.4,High,Low
+P0012,Electronics,221,11.54,346.1,7,13.0,93.7,34.0,False,19.2,Medium,Low
+P0013,Sports,489,20.99,629.6,3,19.7,82.7,0.0,False,23.3,Medium,Low
+P0014,Apparel,465,4.17,125.2,10,8.6,50.3,0.0,False,111.4,Low,High
+P0015,Apparel,236,27.51,825.2,14,52.5,437.6,394.0,True,8.6,High,Low
+P0016,Apparel,387,3.3,99.0,3,5.8,15.7,0.0,False,117.3,Low,High
+P0017,Apparel,51,13.42,402.6,3,21.3,61.5,252.0,True,3.8,High,Low
+P0018,Sports,457,14.7,441.1,10,53.7,200.7,0.0,False,31.1,Low,Low
+P0019,Apparel,243,23.13,694.0,7,30.4,192.3,273.0,False,10.5,High,Low
+P0020,Beauty,492,30.93,927.9,7,35.7,252.2,193.0,False,15.9,Medium,Low
+P0021,Sports,497,13.52,405.7,3,19.9,60.4,0.0,False,36.7,Low,Low
+P0022,Beauty,429,15.15,454.4,3,10.1,55.5,0.0,False,28.3,Medium,Low
+P0023,Beauty,177,15.97,479.1,5,17.0,96.9,175.0,False,11.1,High,Low
+P0024,Electronics,322,11.17,335.0,3,7.6,41.1,0.0,False,28.8,Medium,Low
+P0025,Electronics,222,30.84,925.1,10,41.5,349.9,467.0,True,7.2,High,Low
+P0026,Electronics,235,7.11,213.2,14,28.2,127.7,0.0,False,33.1,Low,Low
+P0027,Sports,54,9.0,269.9,10,29.7,119.7,165.0,True,6.0,High,Low
+P0028,Sports,368,16.04,481.3,7,17.6,129.9,0.0,False,22.9,Medium,Low
+P0029,Home & Kitchen,145,1.73,51.8,3,3.4,8.5,0.0,False,83.9,Low,High
+P0030,Beauty,234,9.14,274.1,14,14.0,141.9,0.0,False,25.6,Medium,Low
+P0031,Sports,303,27.04,811.1,14,51.0,429.5,316.0,True,11.2,High,Low
+P0032,Grocery,329,30.67,920.2,5,29.9,183.3,345.0,False,10.7,High,Low
+P0033,Electronics,114,20.41,612.4,3,25.1,86.4,340.0,False,5.6,High,Low
+P0034,Grocery,139,7.52,225.5,5,12.7,50.2,31.0,False,18.5,Medium,Low
+P0035,Apparel,457,18.19,545.7,7,25.0,152.3,0.0,False,25.1,Medium,Low
+P0036,Electronics,404,8.85,265.4,3,7.9,34.4,0.0,False,45.7,Low,Low
+P0037,Sports,333,0.4,12.1,10,3.1,7.1,0.0,False,828.6,Low,High
+P0038,Apparel,230,33.3,998.9,5,35.7,202.2,505.0,False,6.9,High,Low
+P0039,Grocery,302,4.15,124.5,14,11.9,70.0,0.0,False,72.8,Low,Medium
+P0040,Grocery,376,29.04,871.2,3,27.1,114.2,261.0,False,12.9,High,Low
+P0041,Beauty,190,25.42,762.6,5,21.9,149.0,366.0,False,7.5,High,Low
+P0042,Home & Kitchen,458,7.2,216.1,3,6.2,27.8,0.0,False,63.6,Low,Medium
+P0043,Sports,196,34.66,1039.8,10,55.4,402.0,587.0,True,5.7,High,Low
+P0044,Electronics,273,21.94,658.2,10,29.6,249.0,217.0,False,12.4,High,Low
+P0045,Home & Kitchen,496,11.49,344.7,3,7.8,42.3,0.0,False,43.2,Low,Low
+P0046,Electronics,499,14.65,439.4,5,35.5,108.7,0.0,False,34.1,Low,Low
+P0047,Sports,391,5.08,152.3,7,7.5,43.0,0.0,False,77.0,Low,High
+P0048,Apparel,308,24.03,720.8,14,38.0,374.4,235.0,True,12.8,High,Low
+P0049,Beauty,337,9.85,295.6,5,8.1,57.4,0.0,False,34.2,Low,Low
+P0050,Home & Kitchen,300,27.26,817.8,3,28.0,109.8,300.0,False,11.0,High,Low
+P0051,Electronics,147,4.0,120.1,5,4.1,24.1,0.0,False,36.7,Low,Low
+P0052,Sports,334,7.63,228.8,10,15.2,91.4,0.0,False,43.8,Low,Low
+P0053,Grocery,420,10.35,310.5,3,9.7,40.7,0.0,False,40.6,Low,Low
+P0054,Apparel,452,19.86,595.7,14,27.5,305.5,0.0,False,22.8,Medium,Low
+P0055,Beauty,460,18.75,562.5,3,16.7,73.0,0.0,False,24.5,Medium,Low
+P0056,Grocery,302,7.24,217.3,10,17.1,89.5,0.0,False,41.7,Low,Low
+P0057,Sports,412,3.05,91.6,10,9.4,39.9,0.0,False,134.9,Low,High
+P0058,Beauty,175,9.11,273.2,10,32.7,123.8,49.0,False,19.2,Medium,Low
+P0059,Electronics,418,9.49,284.6,10,27.7,122.5,0.0,False,44.1,Low,Low
+P0060,Apparel,326,6.76,202.9,10,20.8,88.5,0.0,False,48.2,Low,Low

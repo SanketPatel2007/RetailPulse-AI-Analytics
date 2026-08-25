@@ -1,0 +1,7 @@
+{
+  "n_products": 60,
+  "n_need_reorder_now": 8,
+  "n_high_stockout_risk": 21,
+  "n_high_overstock_risk": 8,
+  "total_recommended_units_to_order": 6958
+}

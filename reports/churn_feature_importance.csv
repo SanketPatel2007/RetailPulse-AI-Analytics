@@ -1,0 +1,14 @@
+feature,mean_abs_shap
+frequency,0.66346353
+recency,0.6379294
+tenure_days,0.2943956
+total_items,0.23896429
+monetary,0.23717327
+age,0.19996686
+avg_order_value,0.13584302
+acquisition_channel_Paid Ads,0.09139502
+distinct_categories,0.07444478
+acquisition_channel_Referral,0.044741314
+acquisition_channel_Social,0.032279737
+city_tier_Tier2,0.03009942
+city_tier_Tier3,0.027565189

@@ -1,0 +1,7 @@
+{
+  "auc_roc": 0.798,
+  "precision_at_top20pct": 0.866,
+  "churn_rate_in_data": 0.5039,
+  "n_train": 1949,
+  "n_test": 488
+}
