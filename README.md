@@ -61,62 +61,61 @@ Built for the **Zidio Development — Data Science & Analytics Domain** (March 2
 | Optimization | SciPy (norm/service-level calc) | Safety stock / reorder point statistics |
 
 *(MLflow, Airflow, Kubernetes, Prometheus/Grafana, Evidently AI are specified as the target
-production stack in the full brief — see [Section 7](#7-production-hardening-roadmap-not-included-in-this-build) for what's included here vs. what's a next step.)*
+production stack in the full brief — see [Section 9](#9-whats-included-vs-production-roadmap)
+for what's included here vs. what's a next step.)*
 
 ---
 
 ## 4. Architecture
 
-```
-                       ┌─────────────────────┐
-                       │  generate_data.py    │  synthetic products,
-                       │  (raw data layer)    │  customers, transactions,
-                       └──────────┬───────────┘  daily demand series
-                                  │
-        ┌─────────────────────────┼─────────────────────────┐
-        ▼                         ▼                          ▼
-┌───────────────┐       ┌──────────────────┐       ┌──────────────────┐
-│ segmentation.py│       │   churn.py        │       │  forecasting.py   │
-│ RFM + K-Means  │       │ XGBoost + SHAP    │       │  Prophet per SKU   │
-└───────┬────────┘       └────────┬──────────┘       └─────────┬──────────┘
-        │                          │                            │
-        │                          │                            ▼
-        │                          │                  ┌──────────────────┐
-        │                          │                  │  inventory.py     │
-        │                          │                  │  reorder logic    │
-        │                          │                  └─────────┬──────────┘
-        ▼                          ▼                            ▼
-  customer_segments.csv     churn_scores.csv          inventory_plan.csv
-        │                          │                            │
-        └──────────────────────────┴────────────────────────────┘
-                                    ▼
-                       ┌─────────────────────────┐
-                       │  dashboard/app.py         │
-                       │  Streamlit (5 pages)       │
-                       └─────────────────────────┘
-```
+                   ┌─────────────────────┐
+                   │  generate_data.py    │  synthetic products,
+                   │  (raw data layer)    │  customers, transactions,
+                   └──────────┬───────────┘  daily demand series
+                              │
+    ┌─────────────────────────┼─────────────────────────┐
+    ▼                         ▼                          ▼
+    ┌───────────────┐ ┌──────────────────┐ ┌──────────────────┐
+│ segmentation.py│ │ churn.py │ │ forecasting.py │
+│ RFM + K-Means │ │ XGBoost + SHAP │ │ Prophet per SKU │
+└───────┬────────┘ └────────┬──────────┘ └─────────┬──────────┘
+│ │ │
+│ │ ▼
+│ │ ┌──────────────────┐
+│ │ │ inventory.py │
+│ │ │ reorder logic │
+│ │ └─────────┬──────────┘
+▼ ▼ ▼
+customer_segments.csv churn_scores.csv inventory_plan.csv
+│ │ │
+└──────────────────────────┴────────────────────────────┘
+▼
+┌─────────────────────────┐
+│ dashboard/app.py │
+│ Streamlit (5 pages) │
+└─────────────────────────┘
+
 
 ---
 
 ## 5. Project Structure
 
-```
 retailpulse/
-├── data/                       # generated CSVs (raw + model outputs)
-├── models/                     # saved model artifacts (churn_xgb.json)
-├── reports/                    # metrics JSON + SHAP importances
+├── data/ # generated CSVs (raw + model outputs)
+├── models/ # saved model artifacts (churn_xgb.json)
+├── reports/ # metrics JSON + SHAP importances
 ├── src/
-│   ├── generate_data.py        # synthetic data generator
-│   ├── segmentation.py         # RFM + K-Means
-│   ├── churn.py                # XGBoost churn model + SHAP
-│   ├── forecasting.py          # Prophet demand forecasting
-│   └── inventory.py            # reorder point / safety stock logic
+│ ├── generate_data.py # synthetic data generator
+│ ├── segmentation.py # RFM + K-Means
+│ ├── churn.py # XGBoost churn model + SHAP
+│ ├── forecasting.py # Prophet demand forecasting
+│ └── inventory.py # reorder point / safety stock logic
 ├── dashboard/
-│   └── app.py                  # Streamlit dashboard (5 pages)
-├── run_pipeline.py             # runs the full pipeline end-to-end
+│ └── app.py # Streamlit dashboard (5 pages)
+├── run_pipeline.py # runs the full pipeline end-to-end
 ├── requirements.txt
 └── README.md
-```
+
 
 ---
 
@@ -232,5 +231,3 @@ finished claim.
 ---
 
 *Crafted with precision and modern data science principles · Zidio Development · March 2026*
-#   R e t a i l P u l s e - A I - A n a l y t i c s  
- 
